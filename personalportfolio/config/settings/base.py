@@ -4,6 +4,7 @@ Do not use this file directly — import from development.py or production.py.
 """
 
 from pathlib import Path
+
 from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent

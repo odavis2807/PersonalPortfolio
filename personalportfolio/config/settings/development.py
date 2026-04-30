@@ -3,8 +3,9 @@ Development settings.
 Uses SQLite locally for convenience — switch to Postgres via DATABASE_URL when ready.
 """
 
-from .base import *
 from decouple import config
+
+from .base import *
 
 DEBUG = True
 

@@ -3,9 +3,10 @@ Production settings.
 All secrets must be set as environment variables on the deployment platform.
 """
 
-from .base import *
-from decouple import config
 import dj_database_url
+from decouple import config
+
+from .base import *
 
 DEBUG = False
 
