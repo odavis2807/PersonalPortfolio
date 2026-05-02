@@ -19,3 +19,6 @@ pytest-django>=4.7
 # Code quality
 ruff>=0.3
 black>=24.0
+
+# Pre-commit 
+pre-commit>=3.6
