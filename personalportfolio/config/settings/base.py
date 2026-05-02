@@ -19,11 +19,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "homepage.apps.HomepageConfig",
-    # Local apps (added as you build them)
-    # "core",
-    # "portfolio",
-    # "devlog",
-    # "apps",
+    "portfolio.apps.PortfolioConfig",
+    "development.apps.DevelopmentConfig",
 ]
 
 MIDDLEWARE = [
