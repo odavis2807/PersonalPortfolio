@@ -1,37 +1,40 @@
+{% extends "base.html" %}
+ 
 {% block title %}{{ profile.name }} — Portfolio{% endblock %}
-
+ 
 {% block content %}
-
+ 
 <section>
     <h1>{{ profile.name }}</h1>
-
+ 
     {% if profile.profile_image %}
         <img src="{{ profile.profile_image.url }}" alt="{{ profile.name }}" width="200" />
     {% endif %}
-
+ 
     <p>{{ profile.bio }}</p>
-
+ 
     <ul>
         {% if profile.email %}
             <li>Email: <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
         {% endif %}
-
+ 
         {% if profile.github_url %}
             <li>GitHub: <a href="{{ profile.github_url }}" target="_blank">{{ profile.github_url }}</a></li>
         {% endif %}
-
+ 
         {% if profile.linkedin_url %}
             <li>LinkedIn: <a href="{{ profile.linkedin_url }}" target="_blank">{{ profile.linkedin_url }}</a></li>
         {% endif %}
-
+ 
         {% if profile.resume %}
             <li>Resume: <a href="{{ profile.resume.url }}" target="_blank">Download</a></li>
         {% endif %}
     </ul>
 </section>
-
+ 
 {% if not profile %}
     <p>No profile information found. Add one through the admin panel.</p>
 {% endif %}
-
+ 
 {% endblock %}
+ 
